@@ -4,4 +4,4 @@ MAINTAINER James Turnbull "james@example.com"
 RUN apt-get update && apt-get install -y nginx
 RUN echo 'Hi, i am in you container' > /usr/share/nginx/html/index.html
 EXPOSE 80
-ENTRYPOINT ["/usr/sbin/nginx","-g", "daemon off;"]
+ENTRYPOINT ["/usr/sbin/nginx","-g"]
